@@ -3695,7 +3695,7 @@ h1.page-title + .tag-cloud-list {
   height: 100vh;
   overflow: hidden;
 }
-#loading-box .load-image {
+.load-image {
   position: fixed;
   z-index: 1001;
   display: -webkit-box;
@@ -3704,8 +3704,11 @@ h1.page-title + .tag-cloud-list {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  width: 100vw; /* 视口宽度 */
+  height: 100vh; /* 视口高度 */
+  object-fit: cover; /* 确保图片覆盖整个容器 */
 }
-#loading-box.loaded .load-image {
+.loaded .load-image {
   display: none;
 }
 #pagination .pagination {
